@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV - Mbogneng Junior</title>
+  <style>
+    :root {
+      --bleu-fonce: #2c3e50;
+      --bleu-clair: #3498db;
+      --gris-clair: #f1f1f1;
+      --blanc: #ffffff;
+    }
+  
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+  
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--gris-clair);
+      color: var(--bleu-fonce);
+      line-height: 1.6;
+    }
+  
+    .cv-container {
+      display: flex;
+      flex-direction: row;
+      max-width: 1000px;
+      margin: 30px auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.08);
+      background: var(--blanc);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  
+    .left-column {
+      width: 35%;
+      background-color: var(--bleu-fonce);
+      color: var(--blanc);
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+  
+    .left-column h2 {
+      font-size: 20px;
+      border-bottom: 1px solid #ffffff33;
+      padding-bottom: 6px;
+      margin-bottom: 8px;
+    }
+  
+    .left-column p, .left-column li {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  
+    .left-column ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+  
+    .profile-pic img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 10px;
+      border: 3px solid var(--blanc);
+    }
+  
+    .right-column {
+      width: 65%;
+      padding: 40px;
+      background-color: #fefefe;
+    }
+  
+    .name {
+      font-size: 30px;
+      font-weight: bold;
+      color: var(--bleu-fonce);
+      margin-bottom: 5px;
+    }
+  
+    .title {
+      font-size: 17px;
+      color: var(--bleu-clair);
+      margin-bottom: 25px;
+    }
+  
+    .section {
+      margin-bottom: 30px;
+    }
+  
+    .section h2 {
+      color: var(--bleu-clair);
+      font-size: 20px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #3498db33;
+      padding-bottom: 5px;
+    }
+  
+    ul {
+      padding-left: 20px;
+    }
+  
+    @media (max-width: 768px) {
+      .cv-container {
+        flex-direction: column;
+      }
+  
+      .left-column, .right-column {
+        width: 100%;
+      }
+  
+      .left-column {
+        padding: 30px 20px;
+      }
+  
+      .right-column {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+  
+</head>
+<body>
+
+<div class="cv-container">
+  <div class="left-column">
+    <div class="profile-pic">
+        <img src="https://imgur.com/a/N1aIvZx" alt="Photo de profil" style=" width: 120px; height: 120px; object-fit: cover; border-radius: 50%; display: flex; margin: 0 auto 20px;">
+    </div>
+    <h2  class="numeration">Contact</h2>
+    <p><strong>Téléphone:</strong> +237 676 377 369</p>
+    <p><strong>Email:</strong> juniormbogneng@yahoo.com</p>
+    <p><strong>Adresse:</strong> Yaoundé (Mendong), Cameroun</p>
+
+    <h2>Langues</h2>
+    <ul>
+      <li>Français</li>
+      <li>Anglais</li>
+      <li>Espagnol</li>
+      <li>Yemba (mml)</li>
+    </ul>
+
+    <h2>Centres d’intérêt</h2>
+    <ul>
+      <li>Football (gardien)</li>
+      <li>Rap (auteur de textes)</li>
+      <li>Voyages</li>
+      <li>Lecture</li>
+    </ul>
+  </div>
+
+  <div class="right-column">
+    <div class="name">Mbogneng Tetsiebou Junior</div>
+    <div class="title">Élève ingénieur en Génie Informatique</div>
+
+    <div class="section">
+      <h2>Profil</h2>
+      <p>Passionné par l’informatique et l’ingénierie, je suis enthousiaste à l’idée d’apporter mon expertise dans des projets innovants, notamment en cybersécurité et développement logiciel.</p>
+    </div>
+
+    <div class="section">
+      <h2>Formation</h2>
+      <ul>
+        <li><strong>ENSPY, Université de Yaoundé I</strong> (2021–2026) – Diplôme d’ingénieur en Génie Informatique – Mention : Bien</li>
+        <li><strong>Lycée Bilingue de Fokoué</strong> (2020) – Bac C – Mention : Assez Bien</li>
+      </ul>
+    </div>
+    <div class="section">
+        <h2>Projets en IA / Cybersécurité</h2>
+        <ul>
+          <li>Détection d’images sensibles sur réseaux sociaux avec Deep Learning (CNN, PyTorch)</li>
+          <li>Modèle de classification de fruits africains (prunes) – Vision par ordinateur</li>
+          <li>Système de sécurité réseau avec détection d’intrusion (IDS)</li>
+        
+          <li>Dashboards interactifs pour la prédiction de dons de sang (Data Science)</li>
+        </ul>
+      </div>
+  
+
+    <div class="section">
+      <h2>Expériences</h2>
+      <ul>
+        <li>Développement d’un jeu de dames en Python et d’un jeu de Ludo en Java</li>
+        <li>Développement de 6 sites web (entreprise & scolaire)</li>
+        <li>Application mobile freelance driver (développeur)</li>
+        <li>Répétiteur pour des élèves de Première et Terminale C</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Introduction à la POO en Java – Coursera (2023)</li>
+        <li>Introduction au langage C – Coursera (2022–2023)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Distinctions</h2>
+      <ul>
+        <li>Major du Bac dans l’arrondissement de Fokoué</li>
+        <li>Formateur bénévole en Python à l’ENSPY</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
